@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@ap.cx/react-fullpage": "^0.3.0",
     "@fullpage/react-fullpage": "^0.1.41",
     "framer-motion": "^11.0.3",
     "react": "^18.2.0",
