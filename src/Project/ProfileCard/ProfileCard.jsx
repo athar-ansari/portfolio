@@ -82,7 +82,7 @@ const CustomPrevArrow = ({ onClickHandler, hasPrev, label }) => (
   <button
     className={`custom-arrow custom-arrow-left ${
       hasPrev ? "" : "opacity-45  cursor-not-allowed"
-    } bg-slate-50 hover:bg-green-700 rounded-full p-2 absolute top-96 -right-20 m-52 z-[100] lg:right-96 lg:top-[28rem] xs:-mx-40 xs:top-80`}
+    } bg-slate-50 hover:bg-green-700 rounded-full p-2 absolute top-96 -right-20 m-52 z-[100] lg:mx-[40rem] lg:top-[28rem] xs:-mx-40 xs:top-80`}
     onClick={onClickHandler}
     title={label}
   >
@@ -94,7 +94,7 @@ const CustomNextArrow = ({ onClickHandler, hasNext, label }) => (
   <button
     className={`custom-arrow custom-arrow-right ${
       hasNext ? "" : "opacity-45 cursor-not-allowed"
-    }  bg-slate-50 hover:bg-green-700 rounded-full p-2 absolute top-96 -right-36 m-52  z-[100]  lg:-right-20 lg:top-[28rem] xs:top-80  xs:mx-40`}
+    }  bg-slate-50 hover:bg-green-700 rounded-full p-2 absolute top-96 -right-36 m-52  z-[100]  lg:mx-72 lg:top-[28rem] xs:top-80  xs:mx-40`}
     onClick={onClickHandler}
     title={label}
   >
