@@ -1,9 +1,9 @@
 import React from 'react'
-import Project from './Project/Project'
 
+import  FullPageScroll  from './Components/FullPageScroll/FullPageScroll';
 const App = () => {
   return (
-    <Project/>  
+    <FullPageScroll/>
   )
 }
 

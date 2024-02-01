@@ -1,0 +1,115 @@
+
+.sharingButtons {
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: fit-content;
+    width: fit-content;
+    transition: 0.3s;
+    border-radius: 50%;
+  }
+  
+  .sharingButtons:hover {
+    padding: 60px;
+  }
+  
+  .sharingButtons:hover .button {
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .main-button {
+    position: relative;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    border: none;
+    background: #e8e8e8;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+    border-radius: 50%;
+    transition: 0.2s;
+    z-index: 100;
+  }
+  
+  .button {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+    border: none;
+    background: #e8e8e8;
+    box-shadow: 5px 5px 12px rgba(202, 202, 202, 0), -5px -5px 12px rgba(255, 255, 255, 0);
+    transition: 0.3s;
+    border-radius: 50%;
+  }
+  
+  .discord-button:hover {
+    background: #5865F2;
+  }
+  
+  .sharingButtons:hover .discord-button {
+    translate: 70px 0px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .twitter-button:hover {
+    background: #1CA1F1;
+  }
+  
+  .sharingButtons:hover .twitter-button {
+    translate: 47px -47px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .reddit-button:hover {
+    background: #FF4500;
+  }
+  
+  .sharingButtons:hover .reddit-button {
+    translate: 0px -70px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .messenger-button:hover {
+    background: #0093FF;
+  }
+  
+  .sharingButtons:hover .messenger-button {
+    translate: -47px -47px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .pinterest-button:hover {
+    background: #F0002A;
+  }
+  
+  .sharingButtons:hover .pinterest-button {
+    translate: -70px 0px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .instagram-button:hover {
+    background: #F914AF;
+  }
+  
+  .sharingButtons:hover .instagram-button {
+    translate: -47px 47px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .snapchat-button:hover {
+    background: #FFFC00;
+  }
+  
+  .sharingButtons:hover .snapchat-button {
+    translate: 0px 70px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }
+  
+  .whatsapp-button:hover {
+    background: #25D366;
+  }
+  
+  .sharingButtons:hover .whatsapp-button {
+    translate: 47px 47px;
+    box-shadow: 5px 5px 12px #cacaca, -5px -5px 12px #ffffff;
+  }

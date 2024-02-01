@@ -57,11 +57,19 @@ const cards = [
   // Add more card objects here...
 ];
 
-
 const CardGroup = ({ cards, cardsPerSlide }) => (
-  <div className={`flex p-10  my-20 gap-14   lg:p-2 lg:my-44  xs:my-16 ${cardsPerSlide === 1 ? 'flex-col' : 'flex-row'}`}>
+  <div
+    className={`flex p-10  my-20 gap-14   lg:p-2 lg:my-44  xs:my-16 ${
+      cardsPerSlide === 1 ? "flex-col" : "flex-row"
+    }`}
+  >
     {cards.map((card, index) => (
-      <div key={index} className={`card w-72 bg-white shadow-xl ${cardsPerSlide === 1 ? 'mb-8' : ''}`}>
+      <div
+        key={index}
+        className={`card w-72 bg-white shadow-xl ${
+          cardsPerSlide === 1 ? "mb-8" : ""
+        }`}
+      >
         <figure className="px-2 pt-2">
           <img src={card.image} alt={card.title} className="rounded-2xl h-56" />
         </figure>
@@ -69,9 +77,7 @@ const CardGroup = ({ cards, cardsPerSlide }) => (
           <h2 className="card-title">{card.title}</h2>
           <p>{card.description}</p>
           <div className="card-actions">
-          <AnimButton
-        onClick={() => window.open(card.link, "_blank")}
-      />
+            <AnimButton onClick={() => window.open(card.link, "_blank")} />
           </div>
         </div>
       </div>
@@ -106,7 +112,7 @@ const CustomNextArrow = ({ onClickHandler, hasNext, label }) => (
 const ProfileCard = () => {
   const groupedCards = [];
   const responsiveBreakpoints = {
-    '2xl': 4,
+    "2xl": 4,
     xl: 4,
     lg: 3,
     md: 2,
@@ -114,10 +120,18 @@ const ProfileCard = () => {
   };
 
   const currentScreenWidth = window.innerWidth;
-  const cardsPerSlide = responsiveBreakpoints[currentScreenWidth >= 1535 ? '2xl' : 
-                       currentScreenWidth >= 1280 ? 'xl' : 
-                       currentScreenWidth >= 1023 ? 'lg' : 
-                       currentScreenWidth >= 767 ? 'md' : 'sm'];
+  const cardsPerSlide =
+    responsiveBreakpoints[
+      currentScreenWidth >= 1535
+        ? "2xl"
+        : currentScreenWidth >= 1280
+        ? "xl"
+        : currentScreenWidth >= 1023
+        ? "lg"
+        : currentScreenWidth >= 767
+        ? "md"
+        : "sm"
+    ];
 
   for (let i = 0; i < cards.length; i += cardsPerSlide) {
     groupedCards.push(cards.slice(i, i + cardsPerSlide));
@@ -146,7 +160,11 @@ const ProfileCard = () => {
           className="custom-carousel"
         >
           {groupedCards.map((group, index) => (
-            <CardGroup key={index} cards={group} cardsPerSlide={cardsPerSlide} />
+            <CardGroup
+              key={index}
+              cards={group}
+              cardsPerSlide={cardsPerSlide}
+            />
           ))}
         </Carousel>
       </div>

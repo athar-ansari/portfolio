@@ -1,0 +1,41 @@
+.homeContent{
+    grid-template-columns: 116px repeat(2, 1fr);  
+}
+.home_image{
+    order: 1;
+    } 
+
+.home_social{
+    grid-template-columns:max-content;
+}
+.home_despriction{
+    max-width: 400px;
+}
+
+@media screen  and (max-width:992px ){ 
+    .homeContent{
+        grid-template-columns: 100px repeat(2, 1fr);  
+    }
+    .home_despriction{
+        max-width:initial;
+    }
+}
+
+@media screen  and (max-width:767px ){
+    .homeContent{
+        grid-template-columns: 0.5fr 3fr;
+    
+
+    }
+    
+    .home_image{
+    order: initial;
+    justify-self: initial;
+    
+    } 
+
+    .home_data {
+        grid-column: 1/3;
+    }
+    
+}
