@@ -1,9 +1,11 @@
 import React from "react";
 import "../Contact/Contact.css";
+import NavBar from "../NavBar/NavBar";
+
 const Contact = () => {
   return (
     <>
-      <div className="sctn-wrppr bg-[#ecf0f3] overflow-hidden">
+      <div className="sctn-wrppr bg-[#f5f5f5] overflow-hidden">
         <div className="box-wrppr">
           <div className="contact-main">
             <div className="cd">
@@ -281,7 +283,7 @@ const Contact = () => {
 
           <div className="form-wrppr">
             <form action="#" method="POST">
-              <h2 className="form-title">
+              <h2 className="form-title text-[royalblue] opacity-62">
                 LOVE TO HEAR FROM YOU, GET IN TOUCH
               </h2>
               <div className="form-fields">

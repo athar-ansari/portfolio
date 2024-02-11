@@ -15,9 +15,11 @@ export default {
         circularLightXs:"repeating-radial-gradient(rgba(0,0,0,0.5) 2px,#f5f5f5 5px,#f5f5f5 35px)",
         homeImage : "url('https://source.unsplash.com/MP0IUfwrn0A')",
         gradientLinear : 'linear-gradient(80deg, #eb0f97, #f566f0, #3b098b)',
+        aboutme : 'linear-gradient(#8d86b5, #90a0f2)',
       },
       fontFamily: {
-        Geologica: '"Geologica", sans-serif'
+        Geologica: '"Geologica", sans-serif',
+        Alex : '"Alex Brush", cursive'
       },
       boxShadow: {
         insetWhite: 'inset 0 0 0 6px rgba(255 255 255 / 30%)',

@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import NavBar from "../NavBar/NavBar";
+import MobileNavBar from "../MobileNavBar/MobileNavBar";
 const Skills = ({ name, x, y }) => {
   return (
     <motion.div
@@ -19,8 +20,9 @@ const Skills = ({ name, x, y }) => {
 const Skill = () => {
   return (
     <>
+      <NavBar />
       <div className="skill-page h-screen w-full bg-[#f5f5f5] ">
-        <h2 className="h-24 font-bold text-8xl  w-full text-center text-black md:text-6xl md:p-8 ">
+        <h2 className="hidden  h-24 font-bold  w-full text-center text-black xs:block xs:text-6xl xs:p-8 ">
           Skills
         </h2>
         <div className="mt-3 h-5/6 relative flex items-center justify-center rounded-full  bg-circularLight  lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] lg:bg-circularLightLg md:bg-circularLightMd  sm:bg-circularLightSm  xs:bg-circularLightXs">
@@ -39,8 +41,14 @@ const Skill = () => {
           <Skills name="Figma" x="32vw" y="-5vw" />
           <Skills name="Tailwind CSS" x="0vw" y="-19vw" />
           <Skills name="SCSS" x="-20vw" y="17vw" />
-          <Skills name="Bootstrap" x="18vw" y="17.5vw" /> 
+          <Skills name="Bootstrap" x="18vw" y="17.5vw" />
         </div>
+      </div>
+
+      {/* ======== MOBILE NAV-BAR ======== */}
+
+      <div className="mobileNavBar -mt-80 ml-48  hidden xs:block">
+        <MobileNavBar />
       </div>
     </>
   );

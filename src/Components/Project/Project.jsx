@@ -1,16 +1,22 @@
 import React from "react";
 import ProfileCard from "./ProfileCard/ProfileCard";
-
+import NavBar from "../NavBar/NavBar";
+import MobileNavBar from "../MobileNavBar/MobileNavBar";
 const Project = () => {
   return (
     <>
-      <div className="h-screen w-full bg-orange-700 overflow-hidden">
-        <div className="h-20  text-7xl font-extrabold font-Geologica flex justify-center lg:mt-14   sm:text-5xl ">
-          <h1 className="mt-4 text-white  sm:mr-14 sm:-mt-6">PROJECTS</h1>
-        </div>
-        <div className="">
-          <ProfileCard />
-        </div>
+      <NavBar />
+      <div className="h-screen w-full  overflow-hidden bg-[#f5f5f5]">
+        <h1 className="hidden  h-4 font-extrabold font-Geologica xs:flex justify-center  text-5xl  text-black  mx-14 mt-6">
+          PROJECTS
+        </h1>
+        <ProfileCard />
+      </div>
+
+      {/* ======== MOBILE NAV-BAR ======== */}
+
+      <div className="mobileNavBar -mt-80 ml-48  hidden xs:block">
+        <MobileNavBar />
       </div>
     </>
   );

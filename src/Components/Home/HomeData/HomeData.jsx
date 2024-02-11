@@ -17,7 +17,7 @@ const HomeData = () => {
               deleteSpeed={150}
               delaySpeed={1000}
             /></h3>
-        <p className="home_despriction mb-4 ">I'm creative designer based in India, and I'm very passionate and dedicated to my work. </p>
+        <p className="home_despriction mb-4">I'm creative designer based in India, and I'm very passionate and dedicated to my work. </p>
         <HomeSend/>
       </div>
     </>

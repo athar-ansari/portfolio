@@ -1,0 +1,62 @@
+.menu {
+  position:fixed;
+  width: 320px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.menu .toggle {
+  position: relative;
+  height: 42px;
+  width: 42px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #010100;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 1.25s;
+  z-index: 99;
+}
+.menu.active .toggle {
+  transform: rotate(360deg);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 0 0 2px #010101, 0 0 0 8px #fff;
+}
+.menu li {
+  position: absolute;
+  left: 0;
+  list-style: none;
+  transition: 0.5s;
+  transform: rotate(calc(360deg / 8 * var(--i)));
+  transform-origin: 140px;
+  scale: 0;
+  transition-delay: calc(0.05s * var(--i));
+}
+.menu.active li {
+  scale: 1;
+}
+.menu li .menu-link {
+  position: relative;
+  display: flex;
+  transform: rotate(calc(360deg / -8 * var(--i)));
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.8rem;
+  color: var(--clr);
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+.menu li:hover .menu-link {
+  font-size: 2rem;
+  box-shadow: 0 0 0 2px var(--clr), 0 0 0 6px #fff;
+}

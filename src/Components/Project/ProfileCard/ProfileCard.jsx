@@ -59,7 +59,7 @@ const cards = [
 
 const CardGroup = ({ cards, cardsPerSlide }) => (
   <div
-    className={`flex p-10  my-20 gap-14   lg:p-2 lg:my-44  xs:my-16 ${
+    className={`flex p-5  my-20 gap-14   lg:p-2 lg:my-44  xs:my-16 ${
       cardsPerSlide === 1 ? "flex-col" : "flex-row"
     }`}
   >
@@ -89,7 +89,7 @@ const CustomPrevArrow = ({ onClickHandler, hasPrev, label }) => (
   <button
     className={`custom-arrow custom-arrow-left ${
       hasPrev ? "" : "opacity-45  cursor-not-allowed"
-    } bg-slate-50 hover:bg-green-700 rounded-full p-2 absolute top-96 -right-20 m-52 z-[100] lg:right-96 lg:top-[28rem] xs:-mx-40 xs:top-80`}
+    } bg-[royalblue] hover:opacity-90 rounded-full p-2 absolute top-96 -right-20 m-52 z-[100] lg:right-80 lg:top-[28rem] xs:-mx-40 xs:top-80`}
     onClick={onClickHandler}
     title={label}
   >
@@ -101,7 +101,7 @@ const CustomNextArrow = ({ onClickHandler, hasNext, label }) => (
   <button
     className={`custom-arrow custom-arrow-right ${
       hasNext ? "" : "opacity-45 cursor-not-allowed"
-    }  bg-slate-50 hover:bg-green-700 rounded-full p-2 absolute top-96 -right-36 m-52  z-[100]  lg:-right-20 lg:top-[28rem] xs:top-80  xs:mx-40`}
+    }  bg-[royalblue] hover:opacity-90 rounded-full p-2 absolute top-96 -right-36 m-52  z-[100]  lg:-right-20 lg:top-[28rem] xs:top-80  xs:mx-40`}
     onClick={onClickHandler}
     title={label}
   >
@@ -139,7 +139,7 @@ const ProfileCard = () => {
 
   return (
     <>
-      <div className="profile -mt-24  p-6 lg:p-14  xs:p-4 xs:-mt-[7.5rem]">
+      <div className="profile m-6  p-4 lg:p-14  xs:p-2 xs:-mt-[1.5rem]">
         <Carousel
           showThumbs={false}
           showStatus={false}
@@ -157,7 +157,7 @@ const ProfileCard = () => {
               label={label}
             />
           )}
-          className="custom-carousel"
+          className="custom-carouse "
         >
           {groupedCards.map((group, index) => (
             <CardGroup
