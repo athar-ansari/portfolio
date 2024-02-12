@@ -5,7 +5,7 @@ import NavBar from "../NavBar/NavBar";
 const Contact = () => {
   return (
     <>
-      <div className="sctn-wrppr bg-[#f5f5f5] overflow-hidden">
+      <div className="sctn-wrppr bg-[#f5f5f5] overflow-hidden xs:max-h-dvh">
         <div className="box-wrppr">
           <div className="contact-main">
             <div className="cd">
