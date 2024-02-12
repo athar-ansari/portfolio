@@ -8,7 +8,7 @@ const Education = () => {
   return (
     <>
       <NavBar />
-      <div className="education h-screen w-full bg-[#f5f5f5] text-black xs:overflow-hidden">
+      <div className="education h-screen w-full bg-[#f5f5f5] text-black xs:h-dvh">
         <h2 className="font-bold  w-full text-center   p-3 xs:block xs:text-6xl  ">
           Education
         </h2>

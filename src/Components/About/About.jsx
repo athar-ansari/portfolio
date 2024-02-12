@@ -6,7 +6,7 @@ const About = () => {
   return (
     <>
       <NavBar />
-      <div className="about h-screen flex gap-8 w-full items-center flex-grow bg-[#f5f5f5] text-slate-900 xs:flex xs:flex-col xs:gap-0 xs:overflow-hidden">
+      <div className="about h-screen flex gap-8 w-full items-center flex-grow bg-[#f5f5f5] text-slate-900 xs:flex xs:flex-col xs:gap-0 xs:h-dvh">
         <div className="ml-[17rem] relative flex justify-center items-center  flex-col font-Geologica lg:ml-20 xs:flex-row  xs:mb-2 xs:-ml-1  ">
           <div className="text-9xl leading-none text-center   xs:text-[5.5rem] xs:leading-[70px] xs:mt-11">
             <h1 className="">AB</h1>
