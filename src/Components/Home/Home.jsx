@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <div className="homeSection h-screen w-full bg-[#f5f5f5] text-black xs:h-dvh lg:h-lvh">
+      <div className="homeSection h-screen w-full bg-[#f5f5f5] text-black xs:h-dvh lg:h-dvh lg:overflow-hidden ">
         <div className="homeContainer ">
           <div className="homeContent  ml-44 pt-20  gap-x-8 	items-center xl:ml-32 lg:ml-7 lg:gap-x-5 grid md:block	 xs:gap-x-1  xs:ml-32">
             <HomeSocial />

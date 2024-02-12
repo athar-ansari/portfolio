@@ -21,7 +21,7 @@ const Skill = () => {
   return (
     <>
       <NavBar />
-      <div className="skill-page h-screen w-full bg-[#f5f5f5] xs:h-dvh lg:h-lvh">
+      <div className="skill-page h-screen w-full bg-[#f5f5f5] xs:h-dvh lg:h-dvh lg:overflow-hidden">
         <h2 className=" h-24 font-bold  w-full text-center text-black xs:block text-6xl xs:p-8 ">
           Skills
         </h2>
