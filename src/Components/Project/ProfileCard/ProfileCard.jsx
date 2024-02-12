@@ -59,7 +59,7 @@ const cards = [
 
 const CardGroup = ({ cards, cardsPerSlide }) => (
   <div
-    className={`flex p-5  my-20 gap-14   lg:p-2 lg:my-44  xs:my-16 ${
+    className={`flex p-5  my-20 gap-14   lg:p-2 lg:my-44  xs:my-20 xs:p-1 ${
       cardsPerSlide === 1 ? "flex-col" : "flex-row"
     }`}
   >
@@ -139,7 +139,7 @@ const ProfileCard = () => {
 
   return (
     <>
-      <div className="profile m-6  p-4 lg:p-14  xs:p-2 xs:-mt-[1.5rem]">
+      <div className="profile m-6  p-4 lg:p-14  xs:p-1 xs:m-7 xs:-mt-4 xs:overflow-hidden">
         <Carousel
           showThumbs={false}
           showStatus={false}

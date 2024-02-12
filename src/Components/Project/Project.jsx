@@ -6,7 +6,7 @@ const Project = () => {
   return (
     <>
       <NavBar />
-      <div className="h-screen w-full  overflow-hidden bg-[#f5f5f5]">
+      <div className="h-screen w-full  overflow-hidden bg-[#f5f5f5] xs:overflow-hidden">
         <h1 className="hidden  h-4 font-extrabold font-Geologica xs:flex justify-center  text-5xl  text-black  mx-14 mt-6">
           PROJECTS
         </h1>
@@ -15,7 +15,7 @@ const Project = () => {
 
       {/* ======== MOBILE NAV-BAR ======== */}
 
-      <div className="mobileNavBar -mt-80 ml-48  hidden xs:block">
+      <div className="mobileNavBar -mt-[28rem] ml-48  hidden xs:block">
         <MobileNavBar />
       </div>
     </>

@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <NavBar />
-      <div className="homeSection h-screen w-full bg-[#f5f5f5] text-black">
+      <div className="homeSection h-screen w-full bg-[#f5f5f5] text-black xs:overflow-hidden">
         <div className="homeContainer ">
           <div className="homeContent  ml-44 pt-20  gap-x-8 	items-center xl:ml-32 lg:ml-7 lg:gap-x-5 grid md:block	 xs:gap-x-1  xs:ml-32">
             <HomeSocial />
@@ -20,7 +20,7 @@ const Home = () => {
 
          {/* ======== MOBILE NAV-BAR ======== */}
          
-        <div className="mobileNavBar  -mt-44 ml-48 hidden xs:block ">
+        <div className="mobileNavBar  -mt-52 ml-48 hidden xs:block ">
           <MobileNavBar />
         </div>
       </div>

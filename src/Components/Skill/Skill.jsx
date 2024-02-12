@@ -21,8 +21,8 @@ const Skill = () => {
   return (
     <>
       <NavBar />
-      <div className="skill-page h-screen w-full bg-[#f5f5f5] ">
-        <h2 className="hidden  h-24 font-bold  w-full text-center text-black xs:block xs:text-6xl xs:p-8 ">
+      <div className="skill-page h-screen w-full bg-[#f5f5f5] xs:overflow-hidden">
+        <h2 className=" h-24 font-bold  w-full text-center text-black xs:block text-6xl xs:p-8 ">
           Skills
         </h2>
         <div className="mt-3 h-5/6 relative flex items-center justify-center rounded-full  bg-circularLight  lg:h-[80vh] sm:h-[60vh] xs:h-[50vh] lg:bg-circularLightLg md:bg-circularLightMd  sm:bg-circularLightSm  xs:bg-circularLightXs">
@@ -47,7 +47,7 @@ const Skill = () => {
 
       {/* ======== MOBILE NAV-BAR ======== */}
 
-      <div className="mobileNavBar -mt-80 ml-48  hidden xs:block">
+      <div className="mobileNavBar -mt-96 ml-48  hidden xs:block">
         <MobileNavBar />
       </div>
     </>
