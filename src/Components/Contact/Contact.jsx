@@ -1,13 +1,18 @@
 import React from "react";
 import "../Contact/Contact.css";
-import NavBar from "../NavBar/NavBar";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
     <>
-      <div className="sctn-wrppr bg-[#f5f5f5] overflow-hidden xs:max-h-dvh lg:h-dvh lg:overflow-hidden ">
+     <div className="sctn-wrppr bg-[#f5f5f5] overflow-hidden xs:max-h-dvh lg:h-dvh lg:overflow-hidden ">
         <div className="box-wrppr xs:h-dvh lg:h-dvh lg:overflow-hidden ">
-          <div className="contact-main">
+          <motion.div
+            className="contact-main"
+            initial={{ x: "-100%" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <div className="cd">
               <a href="https://www.instagram.com/your_username">
                 <svg
@@ -279,9 +284,14 @@ const Contact = () => {
               SOCIAL
             </p>
             <div className="main_back"></div>
-          </div>
+            </motion.div>
 
-          <div className="form-wrppr ">
+          <motion.div
+            className="form-wrppr"
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <form action="#" method="POST">
               <h2 className="form-title text-[royalblue] opacity-62">
                 LOVE TO HEAR FROM YOU, GET IN TOUCH
@@ -372,7 +382,7 @@ const Contact = () => {
                 </button>
               </div>
             </form>
-          </div>
+            </motion.div>
         </div>
       </div>
     </>
