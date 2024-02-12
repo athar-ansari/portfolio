@@ -6,8 +6,8 @@ const About = () => {
   return (
     <>
       <NavBar />
-      <div className="about h-screen flex gap-8 w-full items-center flex-grow bg-[#f5f5f5] text-slate-900 xs:flex xs:flex-col xs:gap-0 xs:h-dvh">
-        <div className="ml-[17rem] relative flex justify-center items-center  flex-col font-Geologica lg:ml-20 xs:flex-row  xs:mb-2 xs:-ml-1  ">
+      <div className="about h-screen flex gap-8 w-full items-center flex-grow bg-[#f5f5f5] text-slate-900  xs:flex xs:flex-col xs:gap-0 xs:h-dvh">
+        <div className="ml-[17rem] relative flex justify-center items-center  flex-col font-Geologica lg:ml-20 xs:flex-row  xs:mb-2 xs:-ml-1  lg:mb-36">
           <div className="text-9xl leading-none text-center   xs:text-[5.5rem] xs:leading-[70px] xs:mt-11">
             <h1 className="">AB</h1>
             <h1 className="">OU</h1>
@@ -22,7 +22,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="info text-lg  font-medium mt-10  mr-56 lg:mr-28 lg:text-sm  xs:m-2 xs:mt-8 xs:p-4">
+        <div className="info text-lg  font-medium mt-10  mr-56 lg:mr-28 lg:text-sm lg:mb-36 xs:m-2 xs:mt-8 xs:p-4">
           <p>
             Hello! <br/> I’m Athar Ansari, a tech enthusiast from Asansol, West
             Bengal. Currently, I’m pursuing my Bachelor’s degree in Information
