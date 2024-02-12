@@ -14,7 +14,7 @@
 
 @media screen  and (max-width:992px ){ 
     .homeContent{
-        grid-template-columns: 140px repeat(2, 1fr);  
+        grid-template-columns: 150px repeat(2, 1fr);  
     }
     .home_despriction{
         max-width:initial;

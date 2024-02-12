@@ -37,12 +37,12 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="homenav flex justify-between bg-[#f5f5f5] w-full h-20 p-6 px-20 fixed top-0 z-[999] xs:hidden">
+      <div className="homenav flex justify-between bg-[#f5f5f5] w-full h-20 p-6 px-20 fixed top-0 z-[999] lg:px-12 xs:hidden">
         <div className="name text-5xl font-Alex text-black">Athar </div> 
         <div className="page text-[1.3rem]">
 
         <nav>
-        <ul className="relative flex gap-16 font-bold z-10 cursor-pointer ">
+        <ul className="relative flex gap-16 font-bold z-10 cursor-pointer lg:gap-8">
         <div className="nav-indicator absolute h-full w-[88px] bg-black rounded-[100px] transition-all duration-[0.3s] ease-out  -translate-x-[14px]"></div>
         {links.map((link, index) => (
           <li
