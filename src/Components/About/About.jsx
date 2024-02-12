@@ -22,7 +22,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="info text-lg  font-medium mt-10  mr-56 lg:mr-28 lg:text-sm  xs:mx-6 xs:mt-8">
+        <div className="info text-lg  font-medium mt-10  mr-56 lg:mr-28 lg:text-sm  xs:m-2 xs:mt-8 xs:p-4">
           <p>
             Hello! <br/> I’m Athar Ansari, a tech enthusiast from Asansol, West
             Bengal. Currently, I’m pursuing my Bachelor’s degree in Information
