@@ -281,7 +281,7 @@ const Contact = () => {
             <div className="main_back"></div>
           </div>
 
-          <div className="form-wrppr xs:h-fit">
+          <div className="form-wrppr ">
             <form action="#" method="POST">
               <h2 className="form-title text-[royalblue] opacity-62">
                 LOVE TO HEAR FROM YOU, GET IN TOUCH
