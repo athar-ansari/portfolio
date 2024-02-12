@@ -3,18 +3,18 @@ import { Link, useLocation } from "react-router-dom";
 
 const NavBar = () => {
   const location = useLocation();
-  const [activeLink, setActiveLink] = useState(location.pathname);
+  const [activeLink, setActiveLink] = useState(localStorage.getItem('activeLink') || location.pathname);
   const links = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Education', path: '/education' },
     { name: 'Skills', path: '/skill' },
     { name: 'Works', path: '/project' },
-   
   ];
 
   useEffect(() => {
-    setActiveLink(location.pathname); // set activeLink when the location changes
+    setActiveLink(location.pathname); //  activeLink when the location changes
+    localStorage.setItem('activeLink', location.pathname); // store activeLink in localStorage
   }, [location]);
 
   useEffect(() => {

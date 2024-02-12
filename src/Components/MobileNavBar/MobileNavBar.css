@@ -1,7 +1,7 @@
 .menu {
   position:fixed;
   width: 320px;
-  height: 280px;
+  /* height: 280px; */
   display: flex;
   align-items: center;
   justify-content: center;

@@ -47,7 +47,7 @@ const Skill = () => {
 
       {/* ======== MOBILE NAV-BAR ======== */}
 
-      <div className="mobileNavBar -mt-[30rem] ml-48  hidden xs:block">
+      <div className="mobileNavBar  -mt-80 ml-48  hidden xs:block">
         <MobileNavBar />
       </div>
     </>

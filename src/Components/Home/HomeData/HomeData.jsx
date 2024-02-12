@@ -1,5 +1,5 @@
 import React from "react";
-import HomeSend from "../HomeSend/HomeSend";
+import HomeSend from "../HomeData/HomeSend/HomeSend";
 import { Typewriter } from "react-simple-typewriter"; 
 import { FaLaptopCode } from "react-icons/fa";
 const HomeData = () => {

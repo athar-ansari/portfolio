@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../NavBar/NavBar";
 import CvButton from "./CvButton/CvButton";
 import MobileNavBar from "../MobileNavBar/MobileNavBar";
+
 const About = () => {
   return (
     <>
@@ -42,7 +43,7 @@ const About = () => {
 
        {/* ======== MOBILE NAV-BAR ======== */}
        
-      <div className="mobileNavBar -mt-[30rem] ml-48  hidden xs:block">
+      <div className="mobileNavBar  -mt-80 ml-48  hidden xs:block">
           <MobileNavBar />
         </div>
     </>

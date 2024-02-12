@@ -86,7 +86,7 @@ const Education = () => {
           </div>
         </div>
       </div>
-      <div className="mobileNavBar -mt-[26rem] ml-48  hidden xs:block">
+      <div className="mobileNavBar  -mt-80 ml-48  hidden xs:block">
           <MobileNavBar />
         </div>
     </>
