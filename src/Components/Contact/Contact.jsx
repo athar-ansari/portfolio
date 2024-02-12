@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
       <div className="sctn-wrppr bg-[#f5f5f5] overflow-hidden xs:max-h-dvh">
-        <div className="box-wrppr">
+        <div className="box-wrppr xs:h-dvh">
           <div className="contact-main">
             <div className="cd">
               <a href="https://www.instagram.com/your_username">
