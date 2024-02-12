@@ -15,7 +15,7 @@ const Project = () => {
 
       {/* ======== MOBILE NAV-BAR ======== */}
 
-      <div className="mobileNavBar -mt-80 ml-48  hidden xs:block">
+      <div className="mobileNavBar -mt-96 ml-48  hidden xs:block z-[100]">
         <MobileNavBar />
       </div>
     </>
