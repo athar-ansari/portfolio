@@ -7,22 +7,24 @@ import Skill from "./Components/Skill/Skill";
 import Project from "./Components/Project/Project";
 import Contact from "./Components/Contact/Contact";
 import PageNotFound from "./Components/PageNotFound/PageNotFound";
+import Preloader from "./Components/Preloader/Preloader";
 
 const App = () => {
   return (
-    <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/skill" element={<Skill />} />
-          <Route path="/project" element={<Project />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
-      </Router>
-    </>
+    <Preloader/>
+    // <>
+    //   <Router>
+    //     <Routes>
+    //       <Route path="/" element={<Home />} />
+    //       <Route path="/about" element={<About />} />
+    //       <Route path="/education" element={<Education />} />
+    //       <Route path="/skill" element={<Skill />} />
+    //       <Route path="/project" element={<Project />} />
+    //       <Route path="/contact" element={<Contact />} />
+    //       <Route path="*" element={<PageNotFound />} />
+    //     </Routes>
+    //   </Router>
+    // </>
   );
 };
 
