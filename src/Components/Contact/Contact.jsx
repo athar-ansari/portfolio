@@ -1,12 +1,50 @@
-import React from "react";
-import "../Contact/Contact.css";
+import React, { useState, useEffect } from "react";
+import "./Contact.css";
 import { motion } from "framer-motion";
-
+import StarRating from "./RatingCard/StarRating";
+import { BiSolidHide } from "react-icons/bi";
 const Contact = () => {
+  const [showPopup, setShowPopup] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowPopup(true);
+    }, 2000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
+  const variants = {
+    hidden: { y: '-100vh' },
+    visible: { y: 0, transition: { type: 'spring', stiffness: 50 } }
+  };
+
   return (
     <>
-     <div className="sctn-wrppr bg-[#f5f5f5] overflow-hidden xs:max-h-dvh lg:h-dvh lg:overflow-hidden ">
-        <div className="box-wrppr xs:h-dvh lg:h-dvh lg:overflow-hidden ">
+      <div className="sctn-wrppr bg-[#f5f5f5] overflow-hidden xs:max-h-dvh lg:h-dvh lg:overflow-hidden">
+        {showPopup && (
+          <div className="popup-wrapper fixed inset-0 flex items-center justify-center z-50">
+            <motion.div className="popup-message p-6 rounded shadow-lg relative"
+              variants={variants}
+              initial="hidden"
+              animate="visible"
+              exit="hidden"
+            >
+              <button className="close-button cursor-pointer absolute top-3 right-3 text-black" onClick={handleClosePopup}>
+                <BiSolidHide />
+              </button>
+              <div className="mt-14">
+                <StarRating/>
+              </div>
+            </motion.div>
+          </div>
+        )}
+        <div className="box-wrppr xs:h-dvh lg:h-dvh lg:overflow-hidden">
+
           <motion.div
             className="contact-main"
             initial={{ x: "-100%" }}

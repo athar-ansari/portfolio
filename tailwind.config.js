@@ -63,6 +63,8 @@ export default {
  
 },
   plugins: [require("daisyui")],
-
+ "babel": {
+    "presets": ["@babel/preset-react"]
+  }
 
 }
