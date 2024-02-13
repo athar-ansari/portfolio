@@ -4,7 +4,7 @@ import HomeData from "./HomeData/HomeData";
 import "./Home.css";
 import NavBar from "../NavBar/NavBar";
 import MobileNavBar from "../MobileNavBar/MobileNavBar";
-import Preloader from "../preloader/preloader";
+import Preloader from "../../Components/Preloader/Preloader";
 import { motion } from "framer-motion";
 
 
