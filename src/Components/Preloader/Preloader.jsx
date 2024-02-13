@@ -60,7 +60,7 @@ const Preloader = () => {
           loop
         />
         {!showWelcome ? (
-          <p className="z-[999] relative flex items-end justify-start h-screen ml-12 -mt-5 " style={{ fontSize: `${12 + count}px` }}>
+          <p className="z-[999] relative flex items-end justify-start h-screen ml-12 -mt-5 lg:-mt-10 lg:ml-8" style={{ fontSize: `${12 + count}px` }}>
             {count}%
           </p>
         ) : (
