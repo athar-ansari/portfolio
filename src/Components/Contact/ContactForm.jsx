@@ -10,7 +10,7 @@ export const ContactForm = () => {
             animate={{ x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="POST" data-netlify="true" netlify>
               <input type="hidden" name="form-name" value="contact" />
               <h2 className="form-title text-[royalblue] opacity-62">
                 LOVE TO HEAR FROM YOU, GET IN TOUCH
