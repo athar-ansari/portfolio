@@ -1,79 +1,58 @@
 import React from 'react'
 import { motion } from "framer-motion";
 
-export const ContactForm = () => {
+
+const ContactForm = () => {
   return (
     <>
       <motion.div
-        className="form-wrppr"
-        initial={{ x: "100%" }}
-        animate={{ x: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        <form name="contact" method="POST" data-netlify="true" action="/thank-you">
-          <input type="hidden" name="form-name" value="contact" />
-          <h2 className="form-title text-[royalblue] opacity-62">
-            LOVE TO HEAR FROM YOU, GET IN TOUCH
-          </h2>
-          <div className="form-fields">
-            <div className="form-group">
-              <label htmlFor="firstName"></label>
-              <input
-                type="text"
-                id="firstName"
-                name="firstName"
-                className="fname"
-                placeholder="First Name"
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="lastName"></label>
-              <input
-                type="text"
-                id="lastName"
-                name="lastName"
-                className="lname"
-                placeholder="Last Name"
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="email"></label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="email"
-                placeholder="Mail"
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="phone"></label>
-              <input
-                type="text"
-                id="phone"
-                name="phone"
-                className="phone"
-                placeholder="Phone"
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="message"></label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Write Your Message...."
-              ></textarea>
-            </div>
-          </div>
-          <div className="submit">
-            <button className="submit-button bg-[#488aec]" type="submit">
-              <span>
-                Submit  
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                >
+            className="form-wrppr"
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <form action="#" method="POST">
+              <h2 className="form-title text-[royalblue] opacity-62">
+                LOVE TO HEAR FROM YOU, GET IN TOUCH
+              </h2>
+              <div className="form-fields">
+                <div className="form-group">
+                  <input
+                    type="text"
+                    className="fname"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div className="form-group">
+                  <input
+                    type="text"
+                    className="lname"
+                    placeholder="Last Name"
+                  />
+                </div>
+                <div className="form-group">
+                  <input type="email" className="email" placeholder="Mail" />
+                </div>
+                <div className="form-group">
+                  <input type="text" className="phone" placeholder="Phone" />
+                </div>
+                <div className="form-group">
+                  <textarea
+                    name="message"
+                    id=""
+                    placeholder="Write Your Message...."
+                  ></textarea>
+                </div>
+              </div>
+              <div className="submit">
+                <button className="submit-button ">
+                  <span>
+                    Submit
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
                       <g strokeWidth="0" id="SVGRepo_bgCarrier"></g>
                       <g
                         strokeLinejoin="round"
@@ -123,9 +102,9 @@ export const ContactForm = () => {
               </div>
             </form>
             </motion.div>
-  
-  </>
+    
+    </>
   )
 }
 
-export default ContactForm;
+export default ContactForm
