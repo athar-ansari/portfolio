@@ -20,6 +20,13 @@ function ContactForm() {
       animate={{ x: 0 }}
       transition={{ duration: 0.5 }}
     >
+      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="fname" />
+        <input type="text" name="lname" />
+        <input type="email" name="email" />
+        <input type="text" name="phone" />
+        <textarea name="message"></textarea>
+      </form>
       <form name="contact" onSubmit={handleSubmit} data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
         <h2 className="form-title text-[royalblue] opacity-62">
