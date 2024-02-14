@@ -7,6 +7,7 @@ import Skill from "./Components/Skill/Skill";
 import Project from "./Components/Project/Project";
 import Contact from "./Components/Contact/Contact";
 import PageNotFound from "./Components/PageNotFound/PageNotFound";
+import ThankYou from "./Components/Contact/ThankYou";
 
 const App = () => {
   return (
@@ -20,6 +21,8 @@ const App = () => {
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<PageNotFound />} />
+          <Route path="/thank-you" element={<ThankYou/>} />
+
         </Routes>
       </Router>
     </>
