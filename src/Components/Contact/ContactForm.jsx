@@ -20,7 +20,7 @@ function ContactForm() {
       animate={{ x: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <form name="contact" onSubmit={handleSubmit}>
+      <form name="contact" onSubmit={handleSubmit} netlify>
         <h2 className="form-title text-[royalblue] opacity-62">
           LOVE TO HEAR FROM YOU, GET IN TOUCH
         </h2>
