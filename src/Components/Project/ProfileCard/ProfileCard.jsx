@@ -89,7 +89,7 @@ const CardGroup = ({ cards, cardsPerSlide }) => (
         </figure>
         <div className="card-body items-center text-center">
           <h2 className="card-title">{card.title}</h2>
-          <p className="text-base">{card.description}</p>
+          <p className="text-base xs:text-sm">{card.description}</p>
           <div className="card-actions">
             <AnimButton onClick={() => window.open(card.link, "_blank")} />
           </div>

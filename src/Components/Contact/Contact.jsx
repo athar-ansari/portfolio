@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import StarRating from "./RatingCard/StarRating";
 import { BiSolidHide } from "react-icons/bi";
 import ContactForm from "./ContactForm";
-
 const Contact = () => {
   const [showPopup, setShowPopup] = useState(false);
 
@@ -328,7 +327,7 @@ const Contact = () => {
 
 {/* Contact Page  */}
 
-      <ContactForm/>
+        <ContactForm/>
         </div>
       </div>
     </>

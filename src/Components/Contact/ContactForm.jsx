@@ -1,83 +1,54 @@
-import React from "react";
+import React from 'react'
 import { motion } from "framer-motion";
 
-function ContactForm() {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    const form = event.target;
-    fetch("/", {
-      method: "POST",
-      body: new FormData(form),
-    })
-      .then(() => alert("Form submitted successfully"))
-      .catch((error) => alert(error));
-  };
-
+export const ContactForm = () => {
   return (
-    <motion.div
-      className="form-wrppr"
-      initial={{ x: "100%" }}
-      animate={{ x: 0 }}
-      transition={{ duration: 0.5 }}
-    >
-      <form name="contact" netlify netlify-honeypot="bot-field" hidden>
-        <input type="text" name="fname" />
-        <input type="text" name="lname" />
-        <input type="email" name="email" />
-        <input type="text" name="phone" />
-        <textarea name="message"></textarea>
-      </form>
-      <form name="contact" onSubmit={handleSubmit} data-netlify="true">
-        <input type="hidden" name="form-name" value="contact" />
-        <h2 className="form-title text-[royalblue] opacity-62">
-          LOVE TO HEAR FROM YOU, GET IN TOUCH
-        </h2>
-        <div className="form-fields">
-          <div className="form-group">
-            <input
-              type="text"
-              name="fname"
-              className="fname"
-              placeholder="First Name"
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              name="lname"
-              className="lname"
-              placeholder="Last Name"
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="email"
-              name="email"
-              className="email"
-              placeholder="Mail"
-            />
-          </div>
-          <div className="form-group">
-            <input
-              type="text"
-              name="phone"
-              className="phone"
-              placeholder="Phone"
-            />
-          </div>
-          <div className="form-group">
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Write Your Message...."
-            ></textarea>
-          </div>
-        </div>
-        <div className="submit">
-          <button type="submit" className="submit-button bg-[#488aec]">
-          <span>
-                    Submit 
-                 
+   <>
+     <motion.div
+            className="form-wrppr"
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <form name="contact" method="POST" data-netlify="true">
+              <h2 className="form-title text-[royalblue] opacity-62">
+                LOVE TO HEAR FROM YOU, GET IN TOUCH
+              </h2>
+              <div className="form-fields">
+                <div className="form-group">
+                  <input
+                    type="text"
+                    className="fname"
+                    name="firstName"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div className="form-group">
+                  <input
+                    type="text"
+                    className="lname"
+                    name="lastName"
+                    placeholder="Last Name"
+                  />
+                </div>
+                <div className="form-group">
+                  <input type="email" className="email" name="email" placeholder="Mail" />
+                </div>
+                <div className="form-group">
+                  <input type="text" className="phone" name="phone" placeholder="Phone" />
+                </div>
+                <div className="form-group">
+                  <textarea
+                    name="message"
+                    id=""
+                    placeholder="Write Your Message...."
+                  ></textarea>
+                </div>
+              </div>
+              <div className="submit ">
+                <button className="submit-button bg-[#488aec]" type="submit">
+                  <span>
+                    Submit  
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -98,41 +69,43 @@ function ContactForm() {
                     </svg>
                   </span>
 
-            <span>Sure ?</span>
-            <span>
-              Done!
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <g strokeWidth="0" id="SVGRepo_bgCarrier"></g>
-                <g
-                  strokeLinejoin="round"
-                  strokeLinecap="round"
-                  id="SVGRepo_tracerCarrier"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <path
-                    strokeLinecap="round"
-                    strokeWidth="2"
-                    stroke="#ffffff"
-                    d="M8.00011 13L12.2278 16.3821C12.6557 16.7245 13.2794 16.6586 13.6264 16.2345L22.0001 6"
-                  ></path>
-                  <path
-                    fill="#ffffff"
-                    d="M11.1892 12.2368L15.774 6.63327C16.1237 6.20582 16.0607 5.5758 15.6332 5.22607C15.2058 4.87635 14.5758 4.93935 14.226 5.36679L9.65273 10.9564L11.1892 12.2368ZM8.02292 16.1068L6.48641 14.8263L5.83309 15.6248L2.6 13.2C2.15817 12.8687 1.53137 12.9582 1.2 13.4C0.868627 13.8419 0.95817 14.4687 1.4 14.8L4.63309 17.2248C5.49047 17.8679 6.70234 17.7208 7.381 16.8913L8.02292 16.1068Z"
-                    clipRule="evenodd"
-                    fillRule="evenodd"
-                  ></path>
-                </g>
-              </svg>
-            </span>
-          </button>
-        </div>
-      </form>
-    </motion.div>
-  );
+                  <span>Sure ?</span>
+                  <span>
+                    Done!
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                    >
+                      <g strokeWidth="0" id="SVGRepo_bgCarrier"></g>
+                      <g
+                        strokeLinejoin="round"
+                        strokeLinecap="round"
+                        id="SVGRepo_tracerCarrier"
+                      ></g>
+                      <g id="SVGRepo_iconCarrier">
+                        <path
+                          strokeLinecap="round"
+                          strokeWidth="2"
+                          stroke="#ffffff"
+                          d="M8.00011 13L12.2278 16.3821C12.6557 16.7245 13.2794 16.6586 13.6264 16.2345L22.0001 6"
+                        ></path>
+                        <path
+                          fill="#ffffff"
+                          d="M11.1892 12.2368L15.774 6.63327C16.1237 6.20582 16.0607 5.5758 15.6332 5.22607C15.2058 4.87635 14.5758 4.93935 14.226 5.36679L9.65273 10.9564L11.1892 12.2368ZM8.02292 16.1068L6.48641 14.8263L5.83309 15.6248L2.6 13.2C2.15817 12.8687 1.53137 12.9582 1.2 13.4C0.868627 13.8419 0.95817 14.4687 1.4 14.8L4.63309 17.2248C5.49047 17.8679 6.70234 17.7208 7.381 16.8913L8.02292 16.1068Z"
+                          clipRule="evenodd"
+                          fillRule="evenodd"
+                        ></path>
+                      </g>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </form>
+            </motion.div>
+  
+  </>
+  )
 }
 
 export default ContactForm;
