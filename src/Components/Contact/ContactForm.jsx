@@ -11,6 +11,7 @@ export const ContactForm = () => {
             transition={{ duration: 0.5 }}
           >
             <form name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
               <h2 className="form-title text-[royalblue] opacity-62">
                 LOVE TO HEAR FROM YOU, GET IN TOUCH
               </h2>
@@ -45,7 +46,7 @@ export const ContactForm = () => {
                   ></textarea>
                 </div>
               </div>
-              <div className="submit ">
+              <div className="submit">
                 <button className="submit-button bg-[#488aec]" type="submit">
                   <span>
                     Submit  
