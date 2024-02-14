@@ -65,7 +65,7 @@ const cards = [
     image:
       "https://github.com/athar-ansari/Animated-Toggle/assets/118714083/6dbd806b-1300-4179-b594-a94de19ca856",
     title: "Social Media Icon",
-    description: "Animated social media icons with captivating hover effects.",
+    description: "Social media icons with captivating hover effects.",
     link: "https://athar-ansari.github.io/Social-Media-Icon-Popup/",
   },
   // Add more card objects here...
