@@ -16,7 +16,7 @@ const cards = [
     image:
       "https://github.com/athar-ansari/Animated-Toggle/assets/118714083/6b3fda68-0bd8-4808-bb30-24dbcfeffe10",
     title: "TO-DO-LIST",
-    description: "Colorful, responsive To-do list : manage tasks effortlessly.",
+    description: "Colorful, responsive To-do list to manage tasks.",
     link: "https://todolistwebap.netlify.app/",
   },
   {
@@ -37,7 +37,7 @@ const cards = [
     image:
       "https://github.com/athar-ansari/EASY-GRADE/assets/118714083/1dd9a683-e84d-403a-91ff-d556a93a04fb",
     title: "Calculator",
-    description: "Calculator with button click sound & auto theme switching.",
+    description: "Calculator button click sound & auto theme switching.",
     link: "https://simple-calculator0a.netlify.app/",
   },
   {
@@ -89,7 +89,7 @@ const CardGroup = ({ cards, cardsPerSlide }) => (
         </figure>
         <div className="card-body items-center text-center">
           <h2 className="card-title">{card.title}</h2>
-          <p>{card.description}</p>
+          <p className="text-base">{card.description}</p>
           <div className="card-actions">
             <AnimButton onClick={() => window.open(card.link, "_blank")} />
           </div>
