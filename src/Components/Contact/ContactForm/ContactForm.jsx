@@ -1,7 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import { motion } from "framer-motion";
 
 const ContactForm = () => {
+  const [state, handleSubmit, formState] = useForm("xayroogw");
+  if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+  }
   return (
     <>
       <motion.div
@@ -10,8 +15,10 @@ const ContactForm = () => {
         animate={{ x: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <form name="contact" action='/contact' method="POST" data-netlify="true" netlify-honeypot="bot-field" netlify>
-          <input type="hidden" name="form-name" value="contact" />
+        <form onSubmit={handleSubmit}>
+          <h2 className="form-title text-[royalblue] opacity-62">
+            LOVE TO HEAR FROM YOU, GET IN TOUCH
+          </h2>
           <div className="form-fields">
             <div className="form-group">
               <input
@@ -20,6 +27,7 @@ const ContactForm = () => {
                 placeholder="First Name"
                 required
                 autoComplete='off'
+                {...formState.fName}
               />
             </div>
             <div className="form-group">
@@ -29,13 +37,28 @@ const ContactForm = () => {
                 placeholder="Last Name"
                 required
                 autoComplete='off'
+                {...formState.lName}
               />
             </div>
             <div className="form-group">
-              <input type="email" name="email" placeholder="Mail" required autoComplete='off' />
+              <input 
+                type="email" 
+                name="email" 
+                placeholder="Mail" 
+                required
+                autoComplete='off'
+                {...formState.email}
+              />
             </div>
             <div className="form-group">
-              <input type="text" name="phone" placeholder="Phone" required autoComplete='off' />
+              <input 
+                type="text" 
+                name="phone" 
+                placeholder="Phone" 
+                required
+                autoComplete='off'
+                {...formState.phone}
+              />
             </div>
             <div className="form-group">
               <textarea
@@ -43,13 +66,14 @@ const ContactForm = () => {
                 placeholder="Write Your Message...."
                 required
                 autoComplete='off'
+                {...formState.message}
               ></textarea>
             </div>
           </div>
           <div className="submit">
             <button type="submit" className="submit-button bg-[#488aec]">
-              <span>
-                Submit
+                  <span>
+                    Submit
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
