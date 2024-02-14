@@ -10,7 +10,7 @@ const ContactForm = () => {
         animate={{ x: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" netlify>
+        <form name="contact" action='/contact' method="POST" data-netlify="true" netlify-honeypot="bot-field" netlify>
           <input type="hidden" name="form-name" value="contact" />
           <div className="form-fields">
             <div className="form-group">
