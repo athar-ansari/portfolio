@@ -20,7 +20,8 @@ function ContactForm() {
       animate={{ x: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <form name="contact" onSubmit={handleSubmit} netlify>
+      <form name="contact" onSubmit={handleSubmit} data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
         <h2 className="form-title text-[royalblue] opacity-62">
           LOVE TO HEAR FROM YOU, GET IN TOUCH
         </h2>
@@ -68,7 +69,8 @@ function ContactForm() {
         <div className="submit">
           <button type="submit" className="submit-button bg-[#488aec]">
           <span>
-                    Submit
+                    Submit 
+                 
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
