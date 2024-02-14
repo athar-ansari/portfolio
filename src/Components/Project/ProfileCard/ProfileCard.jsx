@@ -7,59 +7,73 @@ import AnimButton from "./Button/AnimButton";
 const cards = [
   {
     image:
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    title: "Shoes!",
-    description: "If a dog chews shoes whose shoes does he choose?",
-    link: "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+      "https://github.com/athar-ansari/EASY-GRADE/assets/118714083/a713b073-82b7-4d6a-bb6c-12c1f4470f5d ",
+    title: "EasyGrade",
+    description: "This website simplifies semester exam percentage.",
+    link: "https://easygrade.vercel.app/",
   },
   {
     image:
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    title: "Card 2gyftyydtrh",
-    description: "This is the description for card 2.",
-    link: "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+      "https://github.com/athar-ansari/Animated-Toggle/assets/118714083/6b3fda68-0bd8-4808-bb30-24dbcfeffe10",
+    title: "TO-DO-LIST",
+    description: "Colorful, responsive To-do list : manage tasks effortlessly.",
+    link: "https://todolistwebap.netlify.app/",
   },
   {
     image:
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    title: "Card 45543",
-    description: "This is the description for card 3.",
-    link: "https://www.google.com",
+      "https://github.com/athar-ansari/Simple-Animated-Website/assets/118714083/a29e9c54-7cdd-4185-9e27-af347f2332d2",
+    title: "Animated Website",
+    description: "Dynamic website with custom cursor & animations.",
+    link: "https://simple-animated-website.netlify.app/",
   },
   {
     image:
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    title: "Card 657n",
-    description: "This is the description for card 3.",
-    link: "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+      "https://github.com/athar-ansari/Amazon-Clone/assets/118714083/9a269be9-1d40-4042-a1f8-c2b145320053",
+    title: "Amazon Clone",
+    description: "Learn webDevelopment by recreating Amazon's design.",
+    link: "https://athar-ansari.github.io/Amazon-Clone/",
   },
   {
     image:
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    title: "Card 2gyftyydtrh",
-    description: "This is the description for card 2.",
-    link: "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+      "https://github.com/athar-ansari/EASY-GRADE/assets/118714083/1dd9a683-e84d-403a-91ff-d556a93a04fb",
+    title: "Calculator",
+    description: "Calculator with button click sound & auto theme switching.",
+    link: "https://simple-calculator0a.netlify.app/",
   },
   {
     image:
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    title: "Card 45543",
-    description: "This is the description for card 3.",
-    link: "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+      "https://github.com/athar-ansari/Animated-Toggle/assets/118714083/c3b921e9-3996-408e-b860-2cce701064ae",
+    title: "Animated-Toggle",
+    description: "Toggle between light and dark Theme.",
+    link: "https://athar-ansari.github.io/Animated-Toggle/",
   },
   {
     image:
-      "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
-    title: "Card 657n",
-    description: "This is the description for card 3.",
-    link: "https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg",
+      "https://github.com/athar-ansari/Animated-Toggle/assets/118714083/08cebb2e-0106-496b-848b-892696f4afef",
+    title: "Connection Box",
+    description: "Social media box with elegant hover animations.",
+    link: "https://athar-ansari.github.io/Animated-CurveConnection-Box/",
+  },
+  {
+    image:
+      "https://github.com/athar-ansari/Animated-Toggle/assets/118714083/3028b3ec-cf23-46cf-8dfb-da94442c406f",
+    title: "Sharing Button",
+    description: "Effortless sharing: one click, multiple social media links.",
+    link: "https://athar-ansari.github.io/Sharing-Button/",
+  },
+  {
+    image:
+      "https://github.com/athar-ansari/Animated-Toggle/assets/118714083/6dbd806b-1300-4179-b594-a94de19ca856",
+    title: "Social Media Icon",
+    description: "Animated social media icons with captivating hover effects.",
+    link: "https://athar-ansari.github.io/Social-Media-Icon-Popup/",
   },
   // Add more card objects here...
 ];
 
 const CardGroup = ({ cards, cardsPerSlide }) => (
   <div
-    className={`flex p-5  my-20 gap-14   lg:p-2 lg:my-44  xs:my-20 xs:p-1 ${
+    className={`flex p-5 text-black font-serif my-20 gap-14   lg:p-2 lg:my-44  xs:my-20 xs:p-1 ${
       cardsPerSlide === 1 ? "flex-col" : "flex-row"
     }`}
   >

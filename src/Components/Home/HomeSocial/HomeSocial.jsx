@@ -12,13 +12,13 @@ const HomeSocial = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <a href='' className='home_social-icon text-xl md:text-lg hover:text-red-700' target='_blank'>
+        <a href='https://www.instagram.com/__athar__ansari__/' className='home_social-icon text-xl md:text-lg hover:text-[#E4405F]' target='_blank'>
           <FaInstagram />
         </a>
-        <a href='' className='home_social-icon text-xl md:text-lg hover:text-black' target='_blank'>
+        <a href='https://github.com/athar-ansari/' className='home_social-icon text-xl md:text-lg hover:text-black hover:opacity-100 opacity-75' target='_blank'>
           <DiGithubBadge />
         </a>
-        <a href='' className='home_social-icon text-xl md:text-lg hover:text-red-700' target='_blank'>
+        <a href='https://www.linkedin.com/in/athar--ansari/' className='home_social-icon text-xl md:text-lg hover:text-[#0072b1]' target='_blank'>
           <FaLinkedinIn />
         </a>
       </motion.div>

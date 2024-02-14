@@ -10,8 +10,6 @@ import PageNotFound from "./Components/PageNotFound/PageNotFound";
 
 const App = () => {
   return (
-
-   
     <>
       <Router>
         <Routes>
