@@ -42,7 +42,7 @@ const StarRating = () => {
 
   return (
   
-      <div className="container justify-center items-center font-Geologica">
+      <div className="container justify-center items-center font-Geologica ">
         <div className="info">
           <div className="emoji">{ratings[currentRatingIndex].emoji}</div>
           <div className="status">{ratings[currentRatingIndex].name}</div>

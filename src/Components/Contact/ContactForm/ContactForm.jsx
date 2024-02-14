@@ -1,53 +1,55 @@
 import React from 'react'
 import { motion } from "framer-motion";
 
-
 const ContactForm = () => {
   return (
     <>
       <motion.div
-            className="form-wrppr"
-            initial={{ x: "100%" }}
-            animate={{ x: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <form action="#" method="POST">
-              <h2 className="form-title text-[royalblue] opacity-62">
-                LOVE TO HEAR FROM YOU, GET IN TOUCH
-              </h2>
-              <div className="form-fields">
-                <div className="form-group">
-                  <input
-                    type="text"
-                    className="fname"
-                    placeholder="First Name"
-                  />
-                </div>
-                <div className="form-group">
-                  <input
-                    type="text"
-                    className="lname"
-                    placeholder="Last Name"
-                  />
-                </div>
-                <div className="form-group">
-                  <input type="email" className="email" placeholder="Mail" />
-                </div>
-                <div className="form-group">
-                  <input type="text" className="phone" placeholder="Phone" />
-                </div>
-                <div className="form-group">
-                  <textarea
-                    name="message"
-                    id=""
-                    placeholder="Write Your Message...."
-                  ></textarea>
-                </div>
-              </div>
-              <div className="submit">
-                <button className="submit-button ">
-                  <span>
-                    Submit
+        className="form-wrppr"
+        initial={{ x: "100%" }}
+        animate={{ x: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" netlify>
+          <input type="hidden" name="form-name" value="contact" />
+          <div className="form-fields">
+            <div className="form-group">
+              <input
+                type="text"
+                name="fname"
+                placeholder="First Name"
+                required
+                autoComplete='off'
+              />
+            </div>
+            <div className="form-group">
+              <input
+                type="text"
+                name="lname"
+                placeholder="Last Name"
+                required
+                autoComplete='off'
+              />
+            </div>
+            <div className="form-group">
+              <input type="email" name="email" placeholder="Mail" required autoComplete='off' />
+            </div>
+            <div className="form-group">
+              <input type="text" name="phone" placeholder="Phone" required autoComplete='off' />
+            </div>
+            <div className="form-group">
+              <textarea
+                name="message"
+                placeholder="Write Your Message...."
+                required
+                autoComplete='off'
+              ></textarea>
+            </div>
+          </div>
+          <div className="submit">
+            <button type="submit" className="submit-button bg-[#488aec]">
+              <span>
+                Submit
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"

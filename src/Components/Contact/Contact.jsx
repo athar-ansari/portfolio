@@ -28,7 +28,7 @@ const Contact = () => {
     <>
       <div className="sctn-wrppr bg-[#f5f5f5] overflow-hidden xs:max-h-dvh lg:h-dvh lg:overflow-hidden">
         {showPopup && (
-          <div className="popup-wrapper fixed inset-0 flex items-center justify-center z-50">
+          <div className="popup-wrapper fixed inset-0 flex items-center justify-center z-50 ">
             <motion.div className="popup-message p-6 rounded shadow-lg relative"
               variants={variants}
               initial="hidden"
@@ -313,7 +313,7 @@ const Contact = () => {
               </a>
             </div>
 
-            <p className="text">
+            <p className="text font-serif font-black">
               HOVER
               <br />
               <br />
