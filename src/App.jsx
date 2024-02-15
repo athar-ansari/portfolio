@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
@@ -9,6 +9,27 @@ import Contact from "./Components/Contact/Contact";
 import PageNotFound from "./Components/PageNotFound/PageNotFound";
 
 const App = () => {
+  useEffect(() => {
+    let docTitle = document.title;
+
+    const onBlur = () => {
+      document.title = "Come Back";
+    };
+
+    const onFocus = () => {
+      document.title = docTitle;
+    };
+
+    window.addEventListener("blur", onBlur);
+    window.addEventListener("focus", onFocus);
+
+   
+    return () => {
+      window.removeEventListener("blur", onBlur);
+      window.removeEventListener("focus", onFocus);
+    };
+  }, []);
+
   return (
     <>
       <Router>
