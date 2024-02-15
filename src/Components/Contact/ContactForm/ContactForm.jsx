@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const ContactForm = () => {
   const [state, handleSubmit, formState] = useForm("xayroogw");
   if (state.succeeded) {
-      return <p className="p-4 text-white bg-blue-500">Thanks for joining!</p>;
+      return <p className="text-black font-Geologica text-2xl">Thanks for Comming!</p>;
   }
   return (
     <>

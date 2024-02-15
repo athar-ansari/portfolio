@@ -1,8 +1,8 @@
 import React from "react";
-import Home from "./Components/Home/Home";
-import Education from "./Components/Education/Education";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
+import Education from "./Components/Education/Education";
 import Skill from "./Components/Skill/Skill";
 import Project from "./Components/Project/Project";
 import Contact from "./Components/Contact/Contact";

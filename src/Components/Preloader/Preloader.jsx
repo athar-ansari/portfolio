@@ -12,7 +12,7 @@ const Preloader = () => {
             <div className="control maximize"></div>
           </div>
         </div>
-        <div className="myname">Athar...</div>
+        <div className="myname">Hi, Athar...👋</div>
       </div>
     </>
   );
