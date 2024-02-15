@@ -23,7 +23,6 @@ const App = () => {
     window.addEventListener("blur", onBlur);
     window.addEventListener("focus", onFocus);
 
-   
     return () => {
       window.removeEventListener("blur", onBlur);
       window.removeEventListener("focus", onFocus);
