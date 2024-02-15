@@ -20,8 +20,8 @@ const Contact = () => {
   };
 
   const variants = {
-    hidden: { y: '-100vh' },
-    visible: { y: 0, transition: { type: 'spring', stiffness: 50 } }
+    hidden: { y: "-100vh" },
+    visible: { y: 0, transition: { type: "spring", stiffness: 50 } },
   };
 
   return (
@@ -29,23 +29,26 @@ const Contact = () => {
       <div className="sctn-wrppr bg-[#f5f5f5] overflow-hidden xs:max-h-dvh lg:h-dvh lg:overflow-hidden">
         {showPopup && (
           <div className="popup-wrapper fixed inset-0 flex items-center justify-center z-50 ">
-            <motion.div className="popup-message p-6 rounded shadow-lg relative"
+            <motion.div
+              className="popup-message p-6 rounded shadow-lg relative"
               variants={variants}
               initial="hidden"
               animate="visible"
               exit="hidden"
             >
-              <button className="close-button cursor-pointer absolute top-3 right-3 text-black" onClick={handleClosePopup}>
+              <button
+                className="close-button cursor-pointer absolute top-3 right-3 text-black"
+                onClick={handleClosePopup}
+              >
                 <BiSolidHide />
               </button>
               <div className="mt-14">
-                <StarRating/>
+                <StarRating />
               </div>
             </motion.div>
           </div>
         )}
         <div className="box-wrppr xs:h-dvh lg:h-dvh lg:overflow-hidden">
-
           <motion.div
             className="contact-main"
             initial={{ x: "-100%" }}
@@ -122,7 +125,6 @@ const Contact = () => {
               </a>
             </div>
             <div className="cd">
-             
               <a href="https://codepen.io/trending">
                 <svg
                   className="codepen"
@@ -196,7 +198,6 @@ const Contact = () => {
               </svg>
             </div>
             <div className="cd">
-              
               <a href="https://discord.com/">
                 <svg
                   className="discord"
@@ -210,7 +211,6 @@ const Contact = () => {
               </a>
             </div>
             <div className="cd">
-              
               <a href="https://github.com/athar-ansari/">
                 <svg
                   className="github"
@@ -224,7 +224,6 @@ const Contact = () => {
               </a>
             </div>
             <div className="cd">
-              
               <a href="https://web.telegram.org/k/">
                 <svg
                   className="telegram"
@@ -323,11 +322,11 @@ const Contact = () => {
               SOCIAL
             </p>
             <div className="main_back"></div>
-            </motion.div>
+          </motion.div>
 
-{/* Contact Page  */}
+          {/* Contact Page  */}
 
-        <ContactForm/>
+          <ContactForm />
         </div>
       </div>
     </>

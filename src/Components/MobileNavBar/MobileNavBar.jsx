@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./MobileNavBar.css";
 import { Link } from "react-router-dom";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 // ICON : https://icons8.com/
 import project from "../../Static/Images/project.png";
@@ -23,11 +23,11 @@ const MobileNavBar = () => {
 
   return (
     <>
-       <motion.div 
+      <motion.div
         className={`menu ${active ? "active" : ""}`}
-        initial={{ x: '60vw' }} 
-        animate={{ x: 0 }} 
-        transition={{ type: 'spring', stiffness: 60 }} 
+        initial={{ x: "60vw" }}
+        animate={{ x: 0 }}
+        transition={{ type: "spring", stiffness: 60 }}
       >
         <div className="toggle bg-white hover:bg-white " onClick={handleClick}>
           <img
@@ -86,7 +86,7 @@ const MobileNavBar = () => {
             />
           </Link>
         </li>
-        </motion.div>
+      </motion.div>
     </>
   );
 };

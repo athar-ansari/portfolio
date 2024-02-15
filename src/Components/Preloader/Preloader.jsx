@@ -1,5 +1,5 @@
 import React from "react";
-import './Preloader.css';
+import "./Preloader.css";
 const Preloader = () => {
   return (
     <>
@@ -12,7 +12,7 @@ const Preloader = () => {
             <div className="control maximize"></div>
           </div>
         </div>
-        <div className="myname">Hi, Athar...👋</div>
+        <div className="myname">Hi, Athar..👋</div>
       </div>
     </>
   );
