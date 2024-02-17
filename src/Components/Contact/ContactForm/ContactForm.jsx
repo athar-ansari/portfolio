@@ -8,6 +8,7 @@ const ContactForm = () => {
   if (state.succeeded) {
     return (
       <video
+        className="xs:ml-5 lg:mx-60"
         width="320"
         height="240"
         src={ThankYou}
