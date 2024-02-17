@@ -66,7 +66,6 @@ const ContactForm = () => {
                 type="text"
                 name="phone"
                 placeholder="Phone"
-                required
                 autoComplete="off"
                 {...formState.phone}
               />
