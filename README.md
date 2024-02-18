@@ -44,7 +44,7 @@ This repository contains the source code for my personal portfolio website. The 
 5. Open your browser and visit `http://localhost:3000`.
 <br>
 
-## 🔗 To see the project
+## 🔗 Access the Website
 [Welcome to My Portfolio](https://athar-ansari-portfolio.netlify.app/)
 <br>
 
