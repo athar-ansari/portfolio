@@ -11,6 +11,7 @@ const PageNotFound = () => {
           autoPlay
           loop
           muted
+          playsInline
         />
       </div>
     </>
