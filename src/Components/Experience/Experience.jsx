@@ -1,8 +1,14 @@
 import React from "react";
 import NavBar from "../NavBar/NavBar";
 import MobileNavBar from "../MobileNavBar/MobileNavBar";
+import { motion } from "framer-motion";
 
 const Experience = () => {
+  const variants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 2 } },
+  };
+
   return (
     <>
       <NavBar />
@@ -24,18 +30,37 @@ const Experience = () => {
               </svg>
             </div>
             <div className="timeline-start text-end mb-2 ">
-              <time className="font-mono italic xs:text-[0.58rem]">
-                May 2024
-              </time>
-              <div className="text-lg font-black xs:text-base">TATA</div>
-              <h3 className="text-justify  xs:text-[0.55rem] font-serif">
-                During my internship at Tata Consultancy Services as a
-                Cybersecurity Security Analyst, I played a key role in enhancing
-                identity & access management systems, which significantly
-                improved security protocols. This experience honed my ability to
-                align cybersecurity strategies with business objectives &
-                effectively communicate complex technical concepts.
-              </h3>
+              <div className="font-mono italic xs:text-[0.58rem]">May 2024</div>
+              <div>
+                <motion.div
+                  initial="hidden"
+                  animate="visible"
+                  variants={variants}
+                >
+                  <motion.div
+                    initial={{ x: -100, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                    className="text-lg font-black xs:text-base"
+                  >
+                    TATA
+                  </motion.div>
+                </motion.div>
+                <motion.h3
+                  initial="hidden"
+                  animate="visible"
+                  variants={variants}
+                  className="text-justify xs:text-[0.55rem] font-serif"
+                >
+                  During my internship at Tata Consultancy Services as a
+                  Cybersecurity Security Analyst, I played a key role in
+                  enhancing identity & access management systems, which
+                  significantly improved security protocols. This experience
+                  honed my ability to align cybersecurity strategies with
+                  business objectives & effectively communicate complex
+                  technical concepts.
+                </motion.h3>
+              </div>
             </div>
             <hr className="bg-primary" />
           </li>
@@ -56,20 +81,38 @@ const Experience = () => {
               </svg>
             </div>
             <div className="timeline-end mb-6 ">
-              <time className="font-mono italic xs:text-[0.58rem]">
+              <div className="font-mono italic xs:text-[0.58rem]">
                 Apr. 2024 to May 2024
-              </time>
-              <div className="text-lg font-black xs:text-base">
-                JPMorgan Chase & Co.
               </div>
-              <h3 className="text-justify  xs:text-[0.55rem] font-serif">
-                In the Software Engineering Lite Virtual Experience Program with
-                JPMorgan Chase & Co., I developed solutions for their
-                credit-card rewards system.I successfully restored system
-                functionality by developing a new class and implementing a
-                comprehensive test suite, demonstrating my problem-solving &
-                software engineering skills.
-              </h3>
+              <div>
+                <motion.div
+                  initial="hidden"
+                  animate="visible"
+                  variants={variants}
+                >
+                  <motion.div
+                    initial={{ x: 100, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                    className="text-lg font-black xs:text-base"
+                  >
+                    JPMorgan Chase & Co.
+                  </motion.div>
+                </motion.div>
+                <motion.h3
+                  initial="hidden"
+                  animate="visible"
+                  variants={variants}
+                  className="text-justify xs:text-[0.55rem] font-serif"
+                >
+                  In the Software Engineering Lite Virtual Experience Program
+                  with JPMorgan Chase & Co., I developed solutions for their
+                  credit-card rewards system.I successfully restored system
+                  functionality by developing a new class and implementing a
+                  comprehensive test suite, demonstrating my problem-solving &
+                  software engineering skills.
+                </motion.h3>
+              </div>
             </div>
             <hr className="bg-primary" />
           </li>
@@ -90,17 +133,37 @@ const Experience = () => {
               </svg>
             </div>
             <div className="timeline-start text-end ">
-              <time className="font-mono italic xs:text-[0.58rem]">
+              <div className="font-mono italic xs:text-[0.58rem]">
                 Oct. 2023 to Nov. 2023
-              </time>
-              <div className="text-lg font-black xs:text-base">CodeSoft</div>
-              <h3 className="text-justify  xs:text-[0.55rem] font-serif">
-                As a Web Developer Intern at CodeSoft, I created a dynamic
-                calculator app with an engaging user interface, integrating
-                sound effects & system themes to enhance user interaction. This
-                project allowed me to apply my creativity and technical skills
-                in front-end development.
-              </h3>
+              </div>
+              <div>
+                <motion.div
+                  initial="hidden"
+                  animate="visible"
+                  variants={variants}
+                >
+                  <motion.div
+                    initial={{ x: -100, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ duration: 0.5 }}
+                    className="text-lg font-black xs:text-base"
+                  >
+                    CodeSoft
+                  </motion.div>
+                </motion.div>
+                <motion.h3
+                  initial="hidden"
+                  animate="visible"
+                  variants={variants}
+                  className="text-justify xs:text-[0.55rem] font-serif"
+                >
+                  As a Web Developer Intern at CodeSoft, I created a dynamic
+                  calculator app with an engaging user interface, integrating
+                  sound effects & system themes to enhance user interaction.
+                  This project allowed me to apply my creativity and technical
+                  skills in front-end development.
+                </motion.h3>
+              </div>
             </div>
             <hr className="bg-primary" />
           </li>
