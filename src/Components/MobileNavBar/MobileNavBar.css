@@ -32,8 +32,8 @@
   left: 0;
   list-style: none;
   transition: 0.5s;
-  transform: rotate(calc(360deg / 8 * var(--i)));
-  transform-origin: 140px;
+  transform: rotate(calc(360deg / 13 * var(--i)));
+  transform-origin: 150px;
   scale: 0;
   transition-delay: calc(0.05s * var(--i));
 }
@@ -43,7 +43,7 @@
 .menu li .menu-link {
   position: relative;
   display: flex;
-  transform: rotate(calc(360deg / -8 * var(--i)));
+  transform: rotate(calc(360deg / -13 * var(--i)));
   width: 50px;
   height: 50px;
   background-color: #fff;

@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 // ICON : https://icons8.com/
+import link from "../../Static/Images/link.png";
 import project from "../../Static/Images/project.png";
+import experience from "../../Static/Images/experience.png";
 import skill from "../../Static/Images/skill.png";
 import about from "../../Static/Images/about.png";
 import education from "../../Static/Images/education.png";
@@ -38,6 +40,16 @@ const MobileNavBar = () => {
         </div>
 
         <li style={{ "--i": 0, "--clr": "#1da1f2" }}>
+          <Link to="/skill" className="menu-link" onClick={play}>
+            <img
+              src={skill}
+              alt="skill"
+              className="scale-150 transition-transform duration-500 ease-in-out transform hover:scale-125"
+            />
+          </Link>
+        </li>
+
+        <li style={{ "--i": 1, "--clr": "#FF5733" }}>
           <Link to="/education" className="menu-link" onClick={play}>
             <img
               src={education}
@@ -47,7 +59,7 @@ const MobileNavBar = () => {
           </Link>
         </li>
 
-        <li style={{ "--i": 1, "--clr": "#FF5733" }}>
+        <li style={{ "--i": 2, "--clr": "#0a66c2" }}>
           <Link to="/about" className="menu-link" onClick={play}>
             <img
               src={about}
@@ -57,17 +69,17 @@ const MobileNavBar = () => {
           </Link>
         </li>
 
-        <li style={{ "--i": 2, "--clr": "#0a66c2" }}>
-          <Link to="/" className="menu-link" onClick={play}>
+        <li style={{ "--i": 12, "--clr": "#c32aa3" }}>
+          <Link to="/experience" className="menu-link" onClick={play}>
             <img
-              src={home}
-              alt="home"
+              src={experience}
+              alt="experience"
               className="scale-150 transition-transform duration-500 ease-in-out transform hover:scale-125"
             />
           </Link>
         </li>
 
-        <li style={{ "--i": 6, "--clr": "#c32aa3" }}>
+        <li style={{ "--i": 11, "--clr": "#1b1e21" }}>
           <Link to="/project" className="menu-link" onClick={play}>
             <img
               src={project}
@@ -77,11 +89,26 @@ const MobileNavBar = () => {
           </Link>
         </li>
 
-        <li style={{ "--i": 7, "--clr": "#1b1e21" }}>
-          <Link to="/skill" className="menu-link" onClick={play}>
+        <li style={{ "--i": 3, "--clr": "#0a66c2" }}>
+          <Link to="/" className="menu-link" onClick={play}>
             <img
-              src={skill}
-              alt="skill"
+              src={home}
+              alt="home"
+              className="scale-150 transition-transform duration-500 ease-in-out transform hover:scale-125"
+            />
+          </Link>
+        </li>
+
+        <li style={{ "--i": 10, "--clr": "#0a66c2" }}>
+          <Link
+            to="https://atharsocial.netlify.app/"
+            className="menu-link"
+            onClick={play}
+            target="_blank"
+          >
+            <img
+              src={link}
+              alt="link"
               className="scale-150 transition-transform duration-500 ease-in-out transform hover:scale-125"
             />
           </Link>

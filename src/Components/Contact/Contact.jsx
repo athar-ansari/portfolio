@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import StarRating from "./RatingCard/StarRating";
 import { BiSolidHide } from "react-icons/bi";
 import ContactForm from "./ContactForm/ContactForm";
+import MobileNavBar from "../MobileNavBar/MobileNavBar";
+
 const Contact = () => {
   const [showPopup, setShowPopup] = useState(false);
 
@@ -328,6 +330,11 @@ const Contact = () => {
 
           <ContactForm />
         </div>
+      </div>
+      {/* ======== MOBILE NAV-BAR ======== */}
+
+      <div className="mobileNavBar  -mt-96 ml-48  hidden xs:block">
+        <MobileNavBar />
       </div>
     </>
   );

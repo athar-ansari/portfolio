@@ -11,6 +11,7 @@ const NavBar = () => {
     { name: "About", path: "/about" },
     { name: "Education", path: "/education" },
     { name: "Skills", path: "/skill" },
+    { name: "Experience", path: "/experience" },
     { name: "Works", path: "/project" },
   ];
 
@@ -41,10 +42,14 @@ const NavBar = () => {
   return (
     <>
       <div className="homenav flex justify-between bg-[#f5f5f5] w-full h-20 p-6 px-20 fixed top-0 z-[999] lg:px-12 xs:hidden">
-       <Link to="/"><div className="name text-5xl font-Alex text-black">Athar </div> </Link>
-        <div className="page text-[1.3rem]">
+        <Link to="/">
+          <div className="name text-5xl font-Alex text-black lg:text-4xl">
+            Athar{" "}
+          </div>{" "}
+        </Link>
+        <div className="page text-[1.3rem] lg:text-lg">
           <nav>
-            <ul className="relative flex gap-16 font-bold z-10 cursor-pointer lg:gap-8">
+            <ul className="relative flex gap-16 font-bold z-10 cursor-pointer lg:gap-7 ">
               <div className="nav-indicator absolute h-full w-[88px] bg-black rounded-[100px] transition-all duration-[0.3s] ease-out  -translate-x-[14px]"></div>
               {links.map((link, index) => (
                 <li
