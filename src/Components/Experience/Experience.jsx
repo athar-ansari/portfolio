@@ -13,6 +13,9 @@ const Experience = () => {
     <>
       <NavBar />
       <div className=" h-screen w-full bg-[#f5f5f5] xs:h-dvh lg:h-dvh  p-24 lg:p-[4.5rem] xs:p-3 text-slate-800 lg:overflow-hidden">
+        <h2 className="hidden h-20 font-bold  w-full text-center text-black xs:block text-5xl xs:p-1 ">
+          Experience
+        </h2>
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
           <li>
             <div className="timeline-middle text-[royalblue]">
