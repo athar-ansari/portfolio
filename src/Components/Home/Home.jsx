@@ -15,7 +15,7 @@ const Home = () => {
     sessionStorage.setItem("visitedBefore", JSON.stringify(true));
     setTimeout(() => {
       setIsLoading(false);
-    }, 10000);
+    }, 5000);
   }, []);
 
   return (
@@ -33,7 +33,7 @@ const Home = () => {
                   className="home_image mt-32 bg-homeImage bg-no-repeat bg-center bg-cover order-1 w-72 h-72 lg:h-60 lg:w-60 lg:mt-64 xs:w-52 xs:h-52 xs:-mt-32 shadow-insetWhite animate-profile_animate"
                   initial={{ y: -100, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
+                  transition={{ duration: 1.5, delay: 0.2 }}
                 ></motion.div>
                 <HomeData />
               </div>
