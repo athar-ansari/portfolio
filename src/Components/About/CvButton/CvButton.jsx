@@ -6,14 +6,13 @@ const CvButton = () => {
   const [isDownloading, setIsDownloading] = useState(false);
 
   const fileLink =
-    "https://drive.google.com/uc?export=download&id=1aW_KnRmS87bCik91FPbH5ovrYdICqCyL";
+    "https://drive.google.com/uc?export=download&id=1eXNJNcniy-HaoYRNopktqJsuKnqGn71u";
 
   // there is a fileLink variable where I’ve given my Google Drive file link. You’ve to remove that link and paste your own link to download.
-  // If you want to give your Google Drive link there then you can replace this “1g4VcPPfQKVXU4WhuztBDmtXecMfF1pJX” ID with your file ID.
+  // If you want to give your Google Drive link there then you can replace this “1eXNJNcniy-HaoYRNopktqJsuKnqGn71u” ID with your file ID.
   // Steps to Get Downloadable Id of Google Drive File ⤵️
   // To get a file ID, upload your file on Google Drive > Right Click on the File > Click Share > Update General Access to “Anyone with the link” > Click Copy Link > Paste it on the notepad. In this link, you’ll get the file ID.
   // The URL looks like this: https://drive.google.com/file/d/FILE-ID/view?usp=sharing
-
 
   useEffect(() => {
     let timerId;
