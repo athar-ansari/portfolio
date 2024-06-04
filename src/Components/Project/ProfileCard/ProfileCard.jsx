@@ -4,66 +4,68 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import AnimButton from "./Button/AnimButton";
 
+// CARDs IMAGES
+import easygrade from "../../../Static/Images/easygrade.png";
+import todolist from "../../../Static/Images/todolist.png";
+import animatedwebsite from "../../../Static/Images/animatedwebsite.png";
+import amazonclone from "../../../Static/Images/amazonclone.png";
+import calculator from "../../../Static/Images/calculator.png";
+import animatedtoggle from "../../../Static/Images/animatedtoggle.png";
+import connectionbox from "../../../Static/Images/connectionbox.png";
+import sharingbutton from "../../../Static/Images/sharingbutton.png";
+import socialmediaicons from "../../../Static/Images/socialmediaicons.png";
+
 const cards = [
   {
-    image:
-      "https://github.com/athar-ansari/EASY-GRADE/assets/118714083/a713b073-82b7-4d6a-bb6c-12c1f4470f5d ",
+    image: easygrade,
     title: "EasyGrade",
     description: "This website simplifies semester exam percentage.",
     link: "https://easygrade.vercel.app/",
   },
   {
-    image:
-      "https://github.com/athar-ansari/Animated-Toggle/assets/118714083/6b3fda68-0bd8-4808-bb30-24dbcfeffe10",
+    image: todolist,
     title: "TO-DO-LIST",
     description: "Colorful, responsive To-do list to manage tasks.",
     link: "https://todolistwebap.netlify.app/",
   },
   {
-    image:
-      "https://github.com/athar-ansari/Simple-Animated-Website/assets/118714083/a29e9c54-7cdd-4185-9e27-af347f2332d2",
+    image: animatedwebsite,
     title: "Animated Website",
     description: "Dynamic website with custom cursor & animations.",
     link: "https://simple-animated-website.netlify.app/",
   },
   {
-    image:
-      "https://github.com/athar-ansari/Amazon-Clone/assets/118714083/9a269be9-1d40-4042-a1f8-c2b145320053",
+    image: amazonclone,
     title: "Amazon Clone",
     description: "Learn webDevelopment by recreating Amazon's design.",
     link: "https://athar-ansari.github.io/Amazon-Clone/",
   },
   {
-    image:
-      "https://github.com/athar-ansari/EASY-GRADE/assets/118714083/1dd9a683-e84d-403a-91ff-d556a93a04fb",
+    image: calculator,
     title: "Calculator",
     description: "Calculator button click sound & auto theme switching.",
     link: "https://simple-calculator0a.netlify.app/",
   },
   {
-    image:
-      "https://github.com/athar-ansari/Animated-Toggle/assets/118714083/c3b921e9-3996-408e-b860-2cce701064ae",
+    image: animatedtoggle,
     title: "Animated-Toggle",
     description: "Toggle between light and dark Theme.",
     link: "https://athar-ansari.github.io/Animated-Toggle/",
   },
   {
-    image:
-      "https://github.com/athar-ansari/Animated-Toggle/assets/118714083/08cebb2e-0106-496b-848b-892696f4afef",
+    image: connectionbox,
     title: "Connection Box",
     description: "Social media box with elegant hover animations.",
     link: "https://athar-ansari.github.io/Animated-CurveConnection-Box/",
   },
   {
-    image:
-      "https://github.com/athar-ansari/Animated-Toggle/assets/118714083/3028b3ec-cf23-46cf-8dfb-da94442c406f",
+    image: sharingbutton,
     title: "Sharing Button",
     description: "Effortless sharing: one click, multiple social media links.",
     link: "https://athar-ansari.github.io/Sharing-Button/",
   },
   {
-    image:
-      "https://github.com/athar-ansari/Animated-Toggle/assets/118714083/6dbd806b-1300-4179-b594-a94de19ca856",
+    image: socialmediaicons,
     title: "Social Media Icon",
     description: "Social media icons with captivating hover effects.",
     link: "https://athar-ansari.github.io/Social-Media-Icon-Popup/",
