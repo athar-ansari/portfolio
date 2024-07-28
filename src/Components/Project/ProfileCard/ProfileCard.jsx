@@ -5,6 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import AnimButton from "./Button/AnimButton";
 
 // CARDs IMAGES
+import cactus from "../../../Static/Images/cactus.png";
 import easygrade from "../../../Static/Images/easygrade.png";
 import todolist from "../../../Static/Images/todolist.png";
 import animatedwebsite from "../../../Static/Images/animatedwebsite.png";
@@ -16,6 +17,12 @@ import sharingbutton from "../../../Static/Images/sharingbutton.png";
 import socialmediaicons from "../../../Static/Images/socialmediaicons.png";
 
 const cards = [
+  {
+    image: cactus,
+    title: "Ornamental Plants",
+    description: "Ornamental Plants for Your Home.",
+    link: "https://ornamentalplants.vercel.app/",
+  },
   {
     image: easygrade,
     title: "EasyGrade",
