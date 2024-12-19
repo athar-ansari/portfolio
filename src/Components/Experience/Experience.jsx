@@ -33,7 +33,7 @@ const Experience = () => {
               </svg>
             </div>
             <div className="timeline-start text-end mb-2 ">
-              <div className="font-mono italic xs:text-[0.58rem]">May 2024</div>
+              <div className="font-mono italic xs:text-[0.58rem]">November 2024</div>
               <div>
                 <motion.div
                   initial="hidden"
@@ -46,7 +46,7 @@ const Experience = () => {
                     transition={{ duration: 0.5 }}
                     className="text-lg font-black xs:text-base"
                   >
-                    TATA
+                    Skyscanner
                   </motion.div>
                 </motion.div>
                 <motion.h3
@@ -55,13 +55,7 @@ const Experience = () => {
                   variants={variants}
                   className="text-justify xs:text-[0.55rem] font-serif"
                 >
-                  During my internship at Tata Consultancy Services as a
-                  Cybersecurity Security Analyst, I played a key role in
-                  enhancing identity & access management systems, which
-                  significantly improved security protocols. This experience
-                  honed my ability to align cybersecurity strategies with
-                  business objectives & effectively communicate complex
-                  technical concepts.
+                  In the Front-End Software Engineering Virtual Experience Program, I completed a job simulation where I built a web application using React as a front-end engineer at Skyscanner. I developed a page for picking a travel date using Skyscanner’s open-source Backpack React library, customized my application, and ran automated tests to ensure it rendered properly.
                 </motion.h3>
               </div>
             </div>
@@ -85,7 +79,7 @@ const Experience = () => {
             </div>
             <div className="timeline-end mb-6 ">
               <div className="font-mono italic xs:text-[0.58rem]">
-                Apr. 2024 to May 2024
+                 May 2024
               </div>
               <div>
                 <motion.div
@@ -137,7 +131,7 @@ const Experience = () => {
             </div>
             <div className="timeline-start text-end ">
               <div className="font-mono italic xs:text-[0.58rem]">
-                Oct. 2023 to Nov. 2023
+              November 2023
               </div>
               <div>
                 <motion.div
