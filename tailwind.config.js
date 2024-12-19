@@ -13,7 +13,7 @@ export default {
         circularLightMd:"repeating-radial-gradient(rgba(0,0,0,0.5) 2px,#f5f5f5 5px,#f5f5f5 44px)",
         circularLightSm:"repeating-radial-gradient(rgba(0,0,0,0.5) 2px,#f5f5f5 5px,#f5f5f5 38px)",
         circularLightXs:"repeating-radial-gradient(rgba(0,0,0,0.5) 2px,#f5f5f5 5px,#f5f5f5 35px)",
-        homeImage : "url('./Static/Images/homeImage.jpeg')",
+        homeImage : "url('./Static/Images/homeImage.jpg')",
         gradientLinear : 'linear-gradient(80deg, #eb0f97, #f566f0, #3b098b)',
         aboutme : 'linear-gradient(#8d86b5, #90a0f2)',
       },

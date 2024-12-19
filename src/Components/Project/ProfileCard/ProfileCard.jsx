@@ -5,6 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import AnimButton from "./Button/AnimButton";
 
 // CARDs IMAGES
+import LostFound from "../../../Static/Images/LostFound.png";
 import cactus from "../../../Static/Images/cactus.png";
 import easygrade from "../../../Static/Images/easygrade.png";
 import todolist from "../../../Static/Images/todolist.png";
@@ -17,6 +18,12 @@ import sharingbutton from "../../../Static/Images/sharingbutton.png";
 import socialmediaicons from "../../../Static/Images/socialmediaicons.png";
 
 const cards = [
+  {
+    image: LostFound,
+    title: "Lost and Found",
+    description: "Lost and Found Application.",
+    link: "https://lostffound.vercel.app/",
+  },
   {
     image: cactus,
     title: "Ornamental Plants",
