@@ -13,7 +13,7 @@ const Experience = () => {
     <>
       <NavBar />
       <div className=" h-screen w-full bg-[#f5f5f5] xs:h-dvh lg:h-dvh  p-24 lg:p-[4.5rem] xs:p-3 text-slate-800 lg:overflow-hidden">
-        <h2 className="hidden h-20 font-bold  w-full text-center text-black xs:block text-5xl xs:p-1 ">
+        <h2 className="hidden h-16 font-bold  w-full text-center text-black xs:block text-5xl xs:p-1 ">
           Experience
         </h2>
         <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
@@ -33,7 +33,9 @@ const Experience = () => {
               </svg>
             </div>
             <div className="timeline-start text-end mb-2 ">
-              <div className="font-mono italic xs:text-[0.58rem]">November 2024</div>
+              <div className="font-mono italic xs:text-[0.58rem]">
+                November 2024
+              </div>
               <div>
                 <motion.div
                   initial="hidden"
@@ -55,7 +57,12 @@ const Experience = () => {
                   variants={variants}
                   className="text-justify xs:text-[0.55rem] font-serif"
                 >
-                  In the Front-End Software Engineering Virtual Experience Program, I completed a job simulation where I built a web application using React as a front-end engineer at Skyscanner. I developed a page for picking a travel date using Skyscanner’s open-source Backpack React library, customized my application, and ran automated tests to ensure it rendered properly.
+                  In the Front-End Software Engineering Program, I completed a
+                  job simulation where I built a web application using React as
+                  a front-end engineer at Skyscanner. I developed a page for
+                  picking a travel date using Skyscanner’s open-source Backpack
+                  React library, customized my application, and ran automated
+                  tests to ensure it rendered properly.
                 </motion.h3>
               </div>
             </div>
@@ -78,9 +85,7 @@ const Experience = () => {
               </svg>
             </div>
             <div className="timeline-end mb-6 ">
-              <div className="font-mono italic xs:text-[0.58rem]">
-                 May 2024
-              </div>
+              <div className="font-mono italic xs:text-[0.58rem]">May 2024</div>
               <div>
                 <motion.div
                   initial="hidden"
@@ -102,12 +107,12 @@ const Experience = () => {
                   variants={variants}
                   className="text-justify xs:text-[0.55rem] font-serif"
                 >
-                  In the Software Engineering Lite Virtual Experience Program
-                  with JPMorgan Chase & Co., I developed solutions for their
-                  credit-card rewards system.I successfully restored system
-                  functionality by developing a new class and implementing a
-                  comprehensive test suite, demonstrating my problem-solving &
-                  software engineering skills.
+                  In the Software Engineering Program with JPMorgan Chase & Co.,
+                  I developed solutions for their credit-card rewards system.I
+                  successfully restored system functionality by developing a new
+                  class and implementing a comprehensive test suite,
+                  demonstrating my problem-solving & software engineering
+                  skills.
                 </motion.h3>
               </div>
             </div>
@@ -131,7 +136,7 @@ const Experience = () => {
             </div>
             <div className="timeline-start text-end ">
               <div className="font-mono italic xs:text-[0.58rem]">
-              November 2023
+                November 2023
               </div>
               <div>
                 <motion.div
