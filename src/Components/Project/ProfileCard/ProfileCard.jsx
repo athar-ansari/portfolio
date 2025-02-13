@@ -5,6 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import AnimButton from "./Button/AnimButton";
 
 // CARDs IMAGES
+import inventory from "../../../Static/Images/inventory.png";
 import LostFound from "../../../Static/Images/LostFound.png";
 import cactus from "../../../Static/Images/cactus.png";
 import easygrade from "../../../Static/Images/easygrade.png";
@@ -18,6 +19,12 @@ import sharingbutton from "../../../Static/Images/sharingbutton.png";
 import socialmediaicons from "../../../Static/Images/socialmediaicons.png";
 
 const cards = [
+  {
+    image: inventory,
+    title: "InvenTrack Hub",
+    description: "Inventory Management System.",
+    link: "https://inventory-tracking-hub.vercel.app/",
+  },
   {
     image: LostFound,
     title: "Lost and Found",
@@ -89,16 +96,14 @@ const cards = [
 
 const CardGroup = ({ cards, cardsPerSlide }) => (
   <div
-    className={`flex p-5 text-black font-serif my-20 gap-14   lg:p-2 lg:my-44  xs:my-20 xs:p-1 ${
-      cardsPerSlide === 1 ? "flex-col" : "flex-row"
-    }`}
+    className={`flex p-5 text-black font-serif my-20 gap-14   lg:p-2 lg:my-44  xs:my-20 xs:p-1 ${cardsPerSlide === 1 ? "flex-col" : "flex-row"
+      }`}
   >
     {cards.map((card, index) => (
       <div
         key={index}
-        className={`card w-72 bg-white shadow-xl ${
-          cardsPerSlide === 1 ? "mb-8" : ""
-        }`}
+        className={`card w-72 bg-white shadow-xl ${cardsPerSlide === 1 ? "mb-8" : ""
+          }`}
       >
         <figure className="px-2 pt-2">
           <img src={card.image} alt={card.title} className="rounded-2xl h-56" />
@@ -117,9 +122,8 @@ const CardGroup = ({ cards, cardsPerSlide }) => (
 
 const CustomPrevArrow = ({ onClickHandler, hasPrev, label }) => (
   <button
-    className={`custom-arrow custom-arrow-left ${
-      hasPrev ? "" : "opacity-45  cursor-not-allowed"
-    } bg-[royalblue] hover:opacity-90 rounded-full p-2 absolute top-96 -right-20 m-52 z-[100] lg:right-80 lg:top-[28rem] xs:-mx-40 xs:top-80`}
+    className={`custom-arrow custom-arrow-left ${hasPrev ? "" : "opacity-45  cursor-not-allowed"
+      } bg-[royalblue] hover:opacity-90 rounded-full p-2 absolute top-96 -right-20 m-52 z-[100] lg:right-80 lg:top-[28rem] xs:-mx-40 xs:top-80`}
     onClick={onClickHandler}
     title={label}
   >
@@ -129,9 +133,8 @@ const CustomPrevArrow = ({ onClickHandler, hasPrev, label }) => (
 
 const CustomNextArrow = ({ onClickHandler, hasNext, label }) => (
   <button
-    className={`custom-arrow custom-arrow-right ${
-      hasNext ? "" : "opacity-45 cursor-not-allowed"
-    }  bg-[royalblue] hover:opacity-90 rounded-full p-2 absolute top-96 -right-36 m-52  z-[100]  lg:-right-20 lg:top-[28rem] xs:top-80  xs:mx-40`}
+    className={`custom-arrow custom-arrow-right ${hasNext ? "" : "opacity-45 cursor-not-allowed"
+      }  bg-[royalblue] hover:opacity-90 rounded-full p-2 absolute top-96 -right-36 m-52  z-[100]  lg:-right-20 lg:top-[28rem] xs:top-80  xs:mx-40`}
     onClick={onClickHandler}
     title={label}
   >
@@ -152,15 +155,15 @@ const ProfileCard = () => {
   const currentScreenWidth = window.innerWidth;
   const cardsPerSlide =
     responsiveBreakpoints[
-      currentScreenWidth >= 1535
-        ? "2xl"
-        : currentScreenWidth >= 1280
+    currentScreenWidth >= 1535
+      ? "2xl"
+      : currentScreenWidth >= 1280
         ? "xl"
         : currentScreenWidth >= 1023
-        ? "lg"
-        : currentScreenWidth >= 767
-        ? "md"
-        : "sm"
+          ? "lg"
+          : currentScreenWidth >= 767
+            ? "md"
+            : "sm"
     ];
 
   for (let i = 0; i < cards.length; i += cardsPerSlide) {
