@@ -6,10 +6,10 @@ const CvButton = () => {
   const [isDownloading, setIsDownloading] = useState(false);
 
   const fileLink =
-    "https://drive.google.com/uc?export=download&id=1tH11pCBbXBFrNkAbJBFJ6sI99IAnbfgj";
+    "https://drive.google.com/uc?export=download&id=1884HVqKoorzU7l9TQb3XfT8WhkZVkd6j";
 
   // there is a fileLink variable where I’ve given my Google Drive file link. You’ve to remove that link and paste your own link to download.
-  // If you want to give your Google Drive link there then you can replace this “1tH11pCBbXBFrNkAbJBFJ6sI99IAnbfgj” ID with your file ID.
+  // If you want to give your Google Drive link there then you can replace this “1884HVqKoorzU7l9TQb3XfT8WhkZVkd6j” ID with your file ID.
   // Steps to Get Downloadable Id of Google Drive File ⤵️
   // To get a file ID, upload your file on Google Drive > Right Click on the File > Click Share > Update General Access to “Anyone with the link” > Click Copy Link > Paste it on the notepad. In this link, you’ll get the file ID.
   // The URL looks like this: https://drive.google.com/file/d/FILE-ID/view?usp=sharing
@@ -36,11 +36,10 @@ const CvButton = () => {
 
   return (
     <button
-      className={`font-serif m-5 w-48 outline-none border-none flex cursor-pointer px-6 py-4 rounded-xl items-center whitespace-nowrap xs:ml-2 xs:w-32 xs:px-3 xs:py-4 ${
-        isDownloading
+      className={`font-serif m-5 w-48 outline-none border-none flex cursor-pointer px-6 py-4 rounded-xl items-center whitespace-nowrap xs:ml-2 xs:w-32 xs:px-3 xs:py-4 ${isDownloading
           ? "text-black bg-transparent pointer-events-none"
           : "text-white bg-[#4A98F7] hover:bg-[#2382f6] transition-all duration-200"
-      }`}
+        }`}
       onClick={handleClick}
       data-timer="5"
     >
